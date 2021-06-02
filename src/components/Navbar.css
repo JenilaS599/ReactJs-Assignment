@@ -4,8 +4,17 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    
   }
-  
+  .logout{
+    margin-left: 70rem;
+    font-size: 2rem;
+    background: none;
+  }
+  #logout{
+    color: white;
+    font-size: medium;
+  }
   .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;

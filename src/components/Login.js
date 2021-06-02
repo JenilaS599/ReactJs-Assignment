@@ -34,15 +34,10 @@ class Login extends Component {
             islogged: true
           });
         }
-        
         event.preventDefault();
-          
       };
-      
       render() {
-          
       return (
-         //<Redirect to="/users" />,
         <div className="container">
           <form onSubmit={this.login} className="form-signin">
             <h1 className="h3 ">Login form</h1>

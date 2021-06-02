@@ -1,9 +1,12 @@
 import React,{useState} from 'react';
 import * as FcIcons from "react-icons/fc";
+import * as FiIcons from "react-icons/fi";
 import * as AiIcons from "react-icons/ai"
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css'
+
+import Login from './Login'
 import { IconContext } from 'react-icons'
 export default function Navbar() {
     const [sidebar, setSidebar] = useState(false)
@@ -17,6 +20,10 @@ export default function Navbar() {
         <Link to="#" className="menu-bars">
             <FcIcons.FcList onClick={showSidebar}/>
         </Link>
+        <Link to="/" className="logout"><span id="logout">Logout</span>
+            <FiIcons.FiLogOut onClick={showSidebar}/>
+        </Link>
+        
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items' onClick={showSidebar}>

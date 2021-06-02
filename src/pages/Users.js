@@ -17,9 +17,9 @@ function Users(){
         
       <Navbar/>
               <h1>Users</h1>
-              <ul>
+              <ul >
                 {users.map(val =>
-                   <li key={ val.id }>
+                   <li className="userList" key={ val.id }>
                        {val.id} <br/>
                        {val.name} <br/>
                        {val.username} <br/>
@@ -29,6 +29,7 @@ function Users(){
                        ) }
               </ul>
             </div>
+            
     }
 export default Users
 

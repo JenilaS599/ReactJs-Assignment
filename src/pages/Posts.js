@@ -16,11 +16,9 @@ function Posts(){
       return <div className="dashboard">
         <Navbar/>
               <h1>Posts</h1>
-              
-      
               <ul>
                 {users.map(val =>
-                   <li key={ val.id }>
+                   <li className="postList" key={ val.id }>
                        {val.userId} <br/>
                        {val.id} <br/>
                        {val.title} <br/>
