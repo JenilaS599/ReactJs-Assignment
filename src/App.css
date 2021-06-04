@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-.dashboard{
+.dashboard {
   margin: auto;
   text-align: center;
 }
 .users,
-.posts{
+.posts {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -19,16 +19,15 @@
   font-size: 3rem;
 }
 .userList:nth-child(even),
-.postList:nth-child(even){
+.postList:nth-child(even) {
   background-color: rgb(3, 3, 34);
   color: skyblue;
   border: 15px solid lightgrey;
 }
-.userList{
-  display: grid;
+.userList {
   grid-template-columns: 100px 200px;
-grid-template-rows: 100px 50px;
-grid-gap: 25px;
+  grid-template-rows: 100px 50px;
+  grid-gap: 25px;
   flex-direction: row;
   position: relative;
   left: 240px;
@@ -37,21 +36,137 @@ grid-gap: 25px;
   background-color: lightgrey;
   width: 300px;
   border: 15px solid rgb(3, 3, 34);
-  padding: 50px;
+  padding: 20px;
   margin: 20px;
   list-style-type: none;
+  text-align: justify;
 }
-.postList{
+.userList > b {
+  font-size: large;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  bottom: 0;
+  display: inline;
+  color: black;
+  border: 1px dashed black;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(151, 151, 50),
+    rgb(233, 233, 27)
+  );
+}
+h3 {
+  background-image: linear-gradient(
+    to left,
+    red,
+    yellow,
+    green,
+    rgb(79, 79, 184),
+    red,
+    yellow,
+    green
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+label {
+  font-variant: small-caps;
+  color: chocolate;
+}
+.postList > b {
+  background-image: linear-gradient(
+    to right,
+    rgb(54, 54, 51),
+    rgb(233, 233, 27)
+  );
+  border: 1px dashed black;
+  border-radius: 10px;
+  font-size: large;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  bottom: 0;
+  height: 40px;
+  display: inline;
+  color: black;
+}
+.userList:nth-child(even):hover,
+.postList:nth-child(even):hover {
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.userList:nth-child(odd):hover,
+.postList:nth-child(odd):hover {
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.postList {
   position: relative;
   display: grid;
   grid-template-columns: 100px 150px;
-grid-template-rows: 100px 50px;
-grid-gap: 25px;
-overflow: auto;
+  grid-template-rows: 100px 50px;
+  grid-gap: 25px;
+  overflow: auto;
   background-color: lightgrey;
   left: 240px;
   float: left;
   margin: 10px;
   border: 15px solid rgb(3, 3, 34);
   list-style-type: none;
+}
+#goto-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+}
+#goto-bottom:hover,
+#goto-top:hover {
+  color: white;
+}
+#goto-top {
+  position: fixed;
+  bottom: 0;
+  left: 120px;
+  width: 50px;
+  color: red;
+  text-align: center;
+  text-decoration: none;
+}
+.social {
+  position: relative;
+  bottom: 0;
+}
+.youtube {
+  color: red;
+}
+.instagram {
+  color: palevioletred;
+}
+.facebook {
+  color: blue;
+}
+.twitter {
+  color: rgb(74, 74, 207);
+}
+.social:hover {
+  cursor: pointer;
+}
+.social-container {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-top: auto;
+  clear: both;
+  background-color: #060b26;
+  height: 150px;
+  color: white;
 }
