@@ -10,7 +10,7 @@ Once react-app is created, delete public,src,.gitignore,package.json,package-loc
 
 From our repository in GitHub, Click Code and Download ZIP.
 
-Once it is downloaded, open and copy all files in ReactJs-Assignment-master folder.
+Once it is downloaded, open and copy all files (public,src,.gitignore,package.json,package-lock.json,Readme.md,temp.txt).
 
 Paste the files in our project folder
 
